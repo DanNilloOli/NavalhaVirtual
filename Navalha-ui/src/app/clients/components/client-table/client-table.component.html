@@ -1,0 +1,38 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+	<ng-container matColumnDef="name">
+		<th mat-header-cell *matHeaderCellDef>Nome</th>
+		<td mat-cell *matCellDef="let client">{{client.name}}</td>
+	</ng-container>
+
+	<ng-container matColumnDef="email">
+		<th mat-header-cell *matHeaderCellDef>E-mail</th>
+		<td mat-cell *matCellDef="let client">{{client.email}}</td>
+	</ng-container>
+
+	<ng-container matColumnDef="phone">
+		<th mat-header-cell *matHeaderCellDef>Celular</th>
+		<td mat-cell *matCellDef="let client">{{formatPhone(client.phone)}}</td>
+	</ng-container>
+
+
+	<ng-container matColumnDef="actions">
+		<th mat-header-cell *matHeaderCellDef>Ações</th>
+		<td mat-cell *matCellDef="let client">
+			<button mat-min-fab extended matTooltip="excluir" class="delete-button" (click)="delete(client)">
+				<mat-icon>delete</mat-icon>
+			</button>
+
+			<button mat-min-fab extended matTooltip="atualizar" class="update-button" (click)="update(client)">
+				<mat-icon>edit</mat-icon>
+			</button>
+		</td>
+	</ng-container>
+
+	<tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+	 <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+
+</table>
+
+<mat-paginator [pageSizeOptions]="[5, 10,20]" showFirstLastButtons>
+</mat-paginator>

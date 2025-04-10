@@ -1,0 +1,21 @@
+.title-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	color: #fff;
+}
+
+.mat-mdc-card {
+	background-color: #121212;
+	color: #fff;
+}
+
+.mat-mdc-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-title {
+  margin-bottom: 3rem;
+  padding: 0.5rem 0 2rem 0;
+}

@@ -1,0 +1,47 @@
+.calendar-card {
+	width: 30rem;
+	color: #fff;
+	background-color: #121212;
+}
+
+::ng-deep .mat-calendar {
+  color: white;
+
+  .mat-calendar-header {
+    color: white ;
+  }
+
+  .mat-calendar-header .mat-calendar-period-button {
+    color: white ;
+  }
+
+  .mat-calendar-table-header th {
+		color: rgb(196, 196, 196);
+  }
+
+  .mat-calendar-body-cell-content {
+    color: white;
+  }
+
+  .mat-calendar-body-selected {
+    background-color: #35096a !important;
+  }
+
+  .mat-calendar-body-today {
+    border-color: #35096a ;
+  }
+}
+
+::ng-deep mat-form-field {
+  border-radius: 4px;
+
+	.mat-timepicker-input {
+		color: rgb(196, 196, 196) !important;
+	}
+
+  mat-label {
+    background: transparent;
+    padding: 4px 8px;
+		color: rgb(196, 196, 196);
+  }
+}

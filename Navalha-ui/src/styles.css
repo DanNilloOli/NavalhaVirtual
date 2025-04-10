@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background: url('assets/images/barber.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: inherit;
+	background-position: inherit;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+.mat-mdc-form-field-flex, .mat-mdc-form-field-focus-overlay{
+	background-color: #232323;
+	color: #fff;
+}
+
+.mdc-text-field--filled {
+	background-color: #232323 !important;
+}
+
+.mat-calendar-body-label {
+	color: rgb(196, 196, 196) !important;
+}
+
+.mat-mdc-paginator-container {
+	background-color: #232323 !important;
+	color: white;
+}
+
+.mat-mdc-paginator-touch-target {
+	color: rgb(196, 196, 196) !important;
+
+}
+
+.mat-mdc-select-trigger {
+	color: rgb(196, 196, 196) !important;
+}
+
+th, td {
+	background-color: #121212 !important;
+	color: rgb(196, 196, 196) !important;
+}
+
+mat-label {
+	background: transparent;
+	padding: 4px 8px;
+	color: rgb(196, 196, 196);
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+	color: white !important;
+}
