@@ -22,7 +22,7 @@ import { CustomPaginator } from './custom-paginator';
 		MatButtonModule,
 	],
   templateUrl: './client-table.component.html',
-  styleUrl: './client-table.component.scss',
+  styleUrl: './client-table.component.css',
 	providers: [
 		{ provide: SERVICES_TOKEN.DIALOG, useClass: DialogManagerService },
 	{ provide: MatPaginatorIntl, useClass: CustomPaginator }

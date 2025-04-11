@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ],
   templateUrl: './card-header.component.html',
-  styleUrl: './card-header.component.scss'
+  styleUrl: './card-header.component.css'
 })
 export class CardHeaderComponent {
 

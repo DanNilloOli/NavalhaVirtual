@@ -1,0 +1,86 @@
+.music-player {
+  position: fixed;
+  right: 100px;
+  top:  290px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.player-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#youtube-player {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.now-playing {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.player-controls button {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  font-family: 'Amarante', cursive; 
+}
+
+.player-controls button:hover {
+  background: rgba(204, 200, 179, 0.4);
+}
+
+.now-playing p {
+  color: #ffffff; 
+  font-family: 'Amarante', cursive; 
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.now-playing p:hover {
+  text-shadow: 0 0 8px rgba(223, 221, 117, 0.5);
+}
+
+.music-player h3 {
+  color: #ffffff; 
+  font-family: 'Amarante', cursive; 
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.music-player h3:hover {
+  text-shadow: 0 0 8px rgba(223, 221, 117, 0.5);
+}
+
+
+
+

@@ -1,13 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Boldonse&family=Bungee+Tint&family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&family=Quintessential&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background: url('assets/images/barber.jpg') no-repeat;
+html, body {
+	height: 100%;
+  }
+  
+  body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	background: url('assets/images/barber.png') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
-	}
-
-body::before {
+  }
+  
+  body::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -19,46 +25,149 @@ body::before {
 	background-position: inherit;
 	filter: blur(5px);
 	z-index: -1;
-}
-
-.mat-mdc-form-field-flex, .mat-mdc-form-field-focus-overlay{
-	background-color: #232323;
-	color: #fff;
-}
-
-.mdc-text-field--filled {
-	background-color: #232323 !important;
-}
-
-.mat-calendar-body-label {
-	color: rgb(196, 196, 196) !important;
-}
-
-.mat-mdc-paginator-container {
-	background-color: #232323 !important;
-	color: white;
-}
-
-.mat-mdc-paginator-touch-target {
-	color: rgb(196, 196, 196) !important;
-
-}
-
-.mat-mdc-select-trigger {
-	color: rgb(196, 196, 196) !important;
-}
-
-th, td {
-	background-color: #121212 !important;
-	color: rgb(196, 196, 196) !important;
-}
-
-mat-label {
+  }
+  
+  mat-label {
 	background: transparent;
 	padding: 4px 8px;
 	color: rgb(196, 196, 196);
-}
+  }
+  
 
-.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
-	color: white !important;
-}
+  .app-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+  
+  .main-content {
+	flex: 1;
+	padding-bottom: 60px; 
+  }
+
+  app-root {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+  }
+
+  app-footer {
+	display: block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+  }
+
+app-menu-bar .mat-mdc-button {
+	font: inherit !important;
+	background: transparent !important;
+	border: none !important;
+	padding: 0 !important;
+	min-width: auto !important;
+  }
+
+  app-menu-bar .menu-button {
+	font-family: "Amarante", serif !important;
+	font-size: 1.5rem !important;
+	color: #e0e0e0 !important;
+	text-shadow: 1px 1px 3px rgba(255, 250, 250, 0.8) !important;
+	letter-spacing: 2px !important;
+	transition: all 0.3s ease !important;
+	padding: 0.5rem 1rem !important;
+  }
+  
+  app-menu-bar .menu-button:hover {
+	color: #ffffff !important;
+	text-shadow: 0 0 8px rgb(197, 49, 44) !important;
+	transform: scale(1.05) !important;
+  }
+  
+  app-menu-bar .mat-mdc-menu-panel {
+	background: rgba(30, 30, 30, 0.98) !important;
+	border: 1px solid #ffffff !important;
+	backdrop-filter: blur(10px) !important;
+  }
+
+/* ========== ESTILOS GLOBAIS COMPARTILHADOS ========== */
+:root {
+	--blue: #3a5dcf;
+	--dark-bg: rgba(30, 30, 30, 0.8);
+	--border-color: rgba(253, 253, 253, 0.205);
+  }
+  
+  /* ========== FORMULÁRIO (CADASTRO) ========== */
+  app-client-form {
+	.mat-mdc-form-field {
+	  width: 100%;
+	  margin-bottom: 1.5rem;
+	}
+  
+	.mdc-text-field {
+	  background-color: var(--dark-bg) !important;
+	  border: 1px solid var(--border-color) !important;
+	  border-radius: 6px !important;
+	}
+  
+	.mat-mdc-input-element {
+	  color: #ffffff !important;
+	  caret-color: var(--gold) !important;
+	}
+  
+	.mdc-floating-label {
+	  color: rgba(255, 255, 255, 0.7) !important;
+	}
+  
+	.mat-mdc-raised-button {
+	  background-color: var(--gold) !important;
+	  color: #ffffff !important;
+	  margin-top: 1rem;
+	}
+  }
+  
+  /* ========== TABELA (LISTAGEM) ========== */
+  app-client-table {
+	/* Container da tabela */
+	display: block;
+	background: var(--dark-bg) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 2rem 0;
+  
+	/* Cabeçalho */
+	thead {
+	  background: rgba(241, 241, 241, 0.1) !important;
+	  border-bottom: 2px solid var(--blue) !important;
+	}
+  
+	th {
+	  color: var(--gold) !important;
+	  padding: 15px !important;
+	  font-family: "Amarante", serif !important;
+
+	}
+  
+	/* Linhas */
+	tbody tr:hover {
+	  background: rgba(0, 0, 0, 0.76) !important;
+	}
+  
+	/* Botões de ação */
+	.btn-action {
+	  transition: all 0.3s ease;
+	  &:hover {
+		transform: scale(1.1);
+	  }
+	}
+  }
+
+  
+
+  
+
+  
+
+  
+
+
+
+

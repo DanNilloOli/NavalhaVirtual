@@ -14,7 +14,7 @@ import { ComponentsClientTableComponent } from '../components/client-table/clien
 		ComponentsClientTableComponent
 	],
   templateUrl: './list-clients.component.html',
-  styleUrl: './list-clients.component.scss',
+  styleUrl: './list-clients.component.css',
     providers: [
       { provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientsService },
 			{ provide: SERVICES_TOKEN.SNACKBAR, useClass: SnackbarManagerService },

@@ -38,7 +38,7 @@ import { Subscription } from 'rxjs';
     MatSelectModule,
   ],
   templateUrl: './schedule-calendar.component.html',
-  styleUrl: './schedule-calendar.component.scss',
+  styleUrl: './schedule-calendar.component.css',
   providers: [
     provideNativeDateAdapter(),
     {

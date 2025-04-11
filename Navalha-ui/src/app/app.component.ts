@@ -3,16 +3,20 @@ import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/ro
 import { CardHeaderComponent } from "./commons/components/card-header/card-header.component";
 import { filter, map, Subscription } from 'rxjs';
 import { MenuBarComponent } from './commons/components/menu-bar/menu-bar.component';
+import { FooterComponent } from './commons/components/footer/footer.component';
+
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
     CardHeaderComponent,
-		MenuBarComponent
+	MenuBarComponent,
+	FooterComponent
+		
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit, OnDestroy{
   title = 'barber-shop-ui';

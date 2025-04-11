@@ -1,21 +1,54 @@
-.title-center {
+.header-card {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 1rem 0;
+}
+
+.logo-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-	color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.9;
 }
 
-.mat-mdc-card {
-	background-color: #121212;
-	color: #fff;
+.navalha-text {
+  font-family: "Quintessential", serif;
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 1px;
+  transform: rotate(-1deg);
+  margin-left: 40px;
 }
 
-.mat-mdc-card-title {
-  font-size: 2rem;
+.virtual-text {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #0011ff;
+  letter-spacing: 6px;
+  margin-top: -0.8rem;
+  margin-left: 150px;
   font-weight: bold;
+  transform: rotate(1deg);
 }
 
-.card-title {
-  margin-bottom: 3rem;
-  padding: 0.5rem 0 2rem 0;
+
+.kerning-off {
+  letter-spacing: -3px;
+  display: inline-block;
+  transform: translateY(1px);
+}
+
+.shift-up {
+  display: inline-block;
+  transform: translateY(-4px) rotate(5deg);
+  font-size: 110%;
+}
+
+
+.navalha-text:hover, .virtual-text:hover {
+  text-shadow: 
+    2px 0 #ff00ff, 
+    -2px 0 #00ffff;
+  transition: all 0.1s;
 }

@@ -15,7 +15,7 @@ import { SaveScheduleRequest } from '../../services/api-client/schedules/schedul
   selector: 'app-schedules-month',
   imports: [ScheduleCalendarComponent],
   templateUrl: './schedules-month.component.html',
-  styleUrl: './schedules-month.component.scss',
+  styleUrl: './schedules-month.component.css',
   providers: [
     { provide: SERVICES_TOKEN.HTTP.SCHEDULE, useClass: SchedulesService },
     { provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientsService },

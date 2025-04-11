@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 	],
   templateUrl: './menu-bar.component.html',
-  styleUrl: './menu-bar.component.scss'
+  styleUrl: './menu-bar.component.css'
 })
 export class MenuBarComponent {
 

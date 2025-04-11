@@ -10,7 +10,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 		MatDialogModule
 	],
   templateUrl: './yes-no-dialog.component.html',
-  styleUrl: './yes-no-dialog.component.scss'
+  styleUrl: './yes-no-dialog.component.css'
 })
 export class YesNoDialogComponent {
 

@@ -13,7 +13,7 @@ import { SnackbarManagerService } from '../../services/snackbar-manager.service'
   selector: 'app-new-client',
   imports: [ComponentsClientFormComponent],
   templateUrl: './new-client.component.html',
-  styleUrl: './new-client.component.scss',
+  styleUrl: './new-client.component.css',
   providers: [
     { provide: SERVICES_TOKEN.HTTP.CLIENT, useClass: ClientsService },
     { provide: SERVICES_TOKEN.SNACKBAR, useClass: SnackbarManagerService },

@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding-bottom: 100px;
+    
+  }
+  
+  app-footer {
+    display: block !important;
+    opacity: 1 !important;
+}
